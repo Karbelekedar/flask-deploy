@@ -1,4 +1,4 @@
-# app.config["MONGO_URI"] = "mongodb+srv://echo:PjRboQ0F7xcMvPMI@cluster0.7ij7o2z.mongodb.net/Echo?retryWrites=true&w=majority"
+
 
 from flask import Flask, request, jsonify
 from flask_pymongo import PyMongo
