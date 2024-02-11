@@ -1,5 +1,4 @@
 
-
 from flask import Flask, request, jsonify
 from flask_pymongo import PyMongo
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -9,7 +8,7 @@ import os
 load_dotenv()
 
 application = app = Flask(__name__)
-app.config["MONGO_URI"] = os.getenv("MONGO_URI")
+application.config["MONGO_URI"] = os.getenv("MONGO_URI")
 mongo = PyMongo(app)
 
 @app.route('/')
